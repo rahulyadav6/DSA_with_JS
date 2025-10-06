@@ -46,19 +46,23 @@
 
 
 // guess the number game
-let randomNumber = Math.floor((Math.random()*100)+1)
-let guessedNumber = -1;
-while (guessedNumber !== randomNumber) {
-    guessedNumber = Number(prompt("Guess a number between 1 to 100"));
-    if(isNaN(guessedNumber) || guessedNumber < 1 || guessedNumber > 100){
-        console.log('Try again between 1 - 100');
-        continue;
-    }
-    if(guessedNumber > randomNumber){
-        console.log("too high, try again");
-    }else if(guessedNumber < randomNumber){
-        console.log("too low, try again");
-    }else{
-        console.log("congrats 🎉🎉 and the number was: ", randomNumber);
-    }
-}
+// let randomNumber = Math.floor((Math.random()*100)+1)
+// let guessedNumber = -1;
+// while (guessedNumber !== randomNumber) {
+//     guessedNumber = Number(prompt("Guess a number between 1 to 100"));
+//     if(isNaN(guessedNumber) || guessedNumber < 1 || guessedNumber > 100){
+//         console.log('Try again between 1 - 100');
+//         continue;
+//     }
+//     if(guessedNumber > randomNumber){
+//         console.log("too high, try again");
+//     }else if(guessedNumber < randomNumber){
+//         console.log("too low, try again");
+//     }else{
+//         console.log("congrats 🎉🎉 and the number was: ", randomNumber);
+//     }
+// }
+
+
+process.stdout.write("Hello ")
+process.stdout.write("World")
